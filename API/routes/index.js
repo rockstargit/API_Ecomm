@@ -5,6 +5,7 @@ const HttpError = require("../utils/httpError");
 
 router.use("/product", require("./v1/productRoute"));
 router.use("/cart", require("./v1/cartRoute"));
+router.use("/order", require("./v1/orderRoute"));
 
 router.use("/images", express.static(path.join("public", "productImage")));
 
